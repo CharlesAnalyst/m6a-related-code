@@ -1,0 +1,75 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v1.6.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 2 BAM files                                      ||
+||                           P /data5/galaxy/project/DNMT1_KO/RNA_Seq/inp ... ||
+||                           P /data5/galaxy/project/DNMT1_KO/RNA_Seq/inp ... ||
+||                                                                            ||
+||             Output file : /data5/galaxy/project/DNMT1_KO/RNA_Seq/input ... ||
+||                 Summary : /data5/galaxy/project/DNMT1_KO/RNA_Seq/input ... ||
+||              Annotation : /data/database/GRCm38/GENCODE/gencode.vM15.a ... ||
+||      Dir for temp files : /data5/galaxy/project/DNMT1_KO/RNA_Seq/input ... ||
+||                                                                            ||
+||                 Threads : 30                                               ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : yes                                              ||
+||         Strand specific : reversely stranded                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+||          Chimeric reads : counted                                          ||
+||        Both ends mapped : not required                                     ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file /data/database/GRCm38/GENCODE/gencode.vM15.annota ... ||
+||    Features : 782209                                                       ||
+||    Meta-features : 52550                                                   ||
+||    Chromosomes/contigs : 22                                                ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/DNMT1_KO/RNA_Seq/input/unique_b ... ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 11648775                                              ||
+||    Successfully assigned fragments : 8374311 (71.9%)                       ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/DNMT1_KO/RNA_Seq/input/unique_b ... ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 12846235                                              ||
+||    Successfully assigned fragments : 8920381 (69.4%)                       ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+||                         Read assignment finished.                          ||
+||                                                                            ||
+|| Summary of counting results can be found in file "/data5/galaxy/project/D  ||
+|| NMT1_KO/RNA_Seq/input/expression/featureCount/gene_counts.txt.summary"     ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+

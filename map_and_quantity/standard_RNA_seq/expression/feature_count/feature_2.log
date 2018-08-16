@@ -1,0 +1,135 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v1.6.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 6 BAM files                                      ||
+||                           P /data5/galaxy/project/unique_bam/input/ren ... ||
+||                           P /data5/galaxy/project/unique_bam/input/ren ... ||
+||                           P /data5/galaxy/project/unique_bam/input/ren ... ||
+||                           P /data5/galaxy/project/unique_bam/input/ren ... ||
+||                           P /data5/galaxy/project/unique_bam/input/ren ... ||
+||                           P /data5/galaxy/project/unique_bam/input/ren ... ||
+||                                                                            ||
+||             Output file : /data5/galaxy/project/methyl_m6a/data/featur ... ||
+||                 Summary : /data5/galaxy/project/methyl_m6a/data/featur ... ||
+||              Annotation : /data/database/GRCh38/GENCODE/gencode.v27.an ... ||
+||      Dir for temp files : /data5/galaxy/project/methyl_m6a/data/featur ... ||
+||                                                                            ||
+||                 Threads : 10                                               ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : yes                                              ||
+||         Strand specific : reversely stranded                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+||          Chimeric reads : counted                                          ||
+||        Both ends mapped : not required                                     ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file /data/database/GRCh38/GENCODE/gencode.v27.annotat ... ||
+||    Features : 1200453                                                      ||
+||    Meta-features : 58243                                                   ||
+||    Chromosomes/contigs : 25                                                ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/unique_bam/input/rename_bam/bra ... ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 41075329                                              ||
+||    Successfully assigned fragments : 12030586 (29.3%)                      ||
+||    Running time : 0.61 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/unique_bam/input/rename_bam/bra ... ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 36353989                                              ||
+||    Successfully assigned fragments : 10367218 (28.5%)                      ||
+||    Running time : 0.51 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/unique_bam/input/rename_bam/bra ... ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 37804313                                              ||
+||    Successfully assigned fragments : 10360863 (27.4%)                      ||
+||    Running time : 0.52 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/unique_bam/input/rename_bam/hea ... ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 31361535                                              ||
+||    Successfully assigned fragments : 12087415 (38.5%)                      ||
+||    Running time : 0.45 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/unique_bam/input/rename_bam/hea ... ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 28406642                                              ||
+||    Successfully assigned fragments : 10205527 (35.9%)                      ||
+||    Running time : 0.40 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/unique_bam/input/rename_bam/hea ... ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 29482573                                              ||
+||    Successfully assigned fragments : 11889695 (40.3%)                      ||
+||    Running time : 0.40 minutes                                             ||
+||                                                                            ||
+||                         Read assignment finished.                          ||
+||                                                                            ||
+|| Summary of counting results can be found in file "/data5/galaxy/project/m  ||
+|| ethyl_m6a/data/featureCount/gene_counts.txt.summary"                       ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+

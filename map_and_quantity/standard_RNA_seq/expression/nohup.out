@@ -1,0 +1,74 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v1.6.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 4 BAM files                                      ||
+||                           S /data5/galaxy/project/DNMT1_KO/unique_bam/ ... ||
+||                           S /data5/galaxy/project/DNMT1_KO/unique_bam/ ... ||
+||                           S /data5/galaxy/project/DNMT1_KO/unique_bam/ ... ||
+||                           S /data5/galaxy/project/DNMT1_KO/unique_bam/ ... ||
+||                                                                            ||
+||             Output file : /data5/galaxy/project/DNMT1_KO/featureCounts ... ||
+||                 Summary : /data5/galaxy/project/DNMT1_KO/featureCounts ... ||
+||              Annotation : /data/database/GRCm38/GENCODE/gencode.vM15.a ... ||
+||      Dir for temp files : /data5/galaxy/project/DNMT1_KO/featureCounts     ||
+||                                                                            ||
+||                 Threads : 44                                               ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : no                                               ||
+||         Strand specific : no                                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file /data/database/GRCm38/GENCODE/gencode.vM15.annota ... ||
+||    Features : 782209                                                       ||
+||    Meta-features : 52550                                                   ||
+||    Chromosomes/contigs : 22                                                ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/DNMT1_KO/unique_bam/CGR8_In_sor ... ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 915645                                                    ||
+||    Successfully assigned reads : 702580 (76.7%)                            ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/DNMT1_KO/unique_bam/CGR8_IP_sor ... ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 6188500                                                   ||
+||    Successfully assigned reads : 5143241 (83.1%)                           ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/DNMT1_KO/unique_bam/DTK_IP_sort ... ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 7041514                                                   ||
+||    Successfully assigned reads : 5746603 (81.6%)                           ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+|| Process BAM file /data5/galaxy/project/DNMT1_KO/unique_bam/DTK_In_sort ... ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 1274618                                                   ||
+||    Successfully assigned reads : 951321 (74.6%)                            ||
+||    Running time : 0.01 minutes                                             ||
+||                                                                            ||
+||                         Read assignment finished.                          ||
+||                                                                            ||
+|| Summary of counting results can be found in file "/data5/galaxy/project/D  ||
+|| NMT1_KO/featureCounts/gene_counts.txt.summary"                             ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
