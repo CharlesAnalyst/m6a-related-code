@@ -32,13 +32,11 @@ def run_fastp(fq):
 
 
 if __name__ == "__main__":
-    """
     pool = Pool(processes=len(fq_list))
     for i_fq in fq_list:
         pool.apply_async(run_fastp, (i_fq, ))
     pool.close()
     pool.join()
-"""
-    run_fastp("/data5/galaxy/project/DNMT1_m6a/MEF_MES_compare/m6a_level/fq/SRR1596097.fastq.gz")
+    # run_fastp("/data5/galaxy/project/DNMT1_m6a/MEF_MES_compare/m6a_level/fq/SRR1596097.fastq.gz")
 
 
